@@ -8,9 +8,9 @@ constexpr ll INF = 1<<30;
 bool CHECK_NUM(int x){
   if(x%3 == 0){
     cout << " " << x;
-    return true;
+    return false;
   }
-  return false;
+  return true;
 }
 
 bool INCLUDE3(int x){
@@ -37,7 +37,7 @@ int main()
   
   int i = 1;
   while(END_CHECK_NUM(i,N)){
-    if(!CHECK_NUM(i)) INCLUDE3(i);
+    if(CHECK_NUM(i)) INCLUDE3(i);
     i++;
   }
   
